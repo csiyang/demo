@@ -8,11 +8,13 @@ import {
 } from 'react-native'
 
 function Stories(props) {
-
+  function handlePress() {
+    
+  }
 
   return (
     <View style={styles.stories}>
-      <TouchableHighlight>
+      <TouchableHighlight onPress={handlePress}>
         <Image 
         style={styles.story}
         source={{
@@ -22,7 +24,7 @@ function Stories(props) {
         }} />
       </TouchableHighlight>
 
-      <TouchableHighlight>
+      <TouchableHighlight onPress={handlePress}>
         <Image 
         style={styles.story}
         source={{
@@ -32,7 +34,7 @@ function Stories(props) {
         }} />
       </TouchableHighlight>
 
-      <TouchableHighlight>
+      <TouchableHighlight onPress={handlePress}>
         <Image 
         style={styles.story}
         source={{
